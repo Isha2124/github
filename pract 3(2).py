@@ -1,0 +1,25 @@
+# Input list from user
+items = list(map(int, input("Enter item numbers (space separated): ").split()))
+
+# a) Total number of items
+print("Total items:", len(items))
+
+# b) Last item
+print("Last item:", items[-1])
+
+# c) Sorted list
+sorted_items = sorted(items)
+print("Sorted list:", sorted_items)
+
+# d) Check if 515 is present
+if 515 in items:
+    print("Yes")
+else:
+    print("No")
+
+# e) Add 121 and 321, then sort and print
+items.append(121)
+items.append(321)
+items.sort()
+
+print("Updated list:", items)
